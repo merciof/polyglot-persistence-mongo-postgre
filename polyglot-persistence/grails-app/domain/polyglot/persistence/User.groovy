@@ -12,6 +12,7 @@ class User {
     
     static mapping = {
         table 'usuarios'
+        version false
     }
 
     static constraints = {
