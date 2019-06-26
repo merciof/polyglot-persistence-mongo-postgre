@@ -18,9 +18,19 @@ class Book implements MongoEntity<Book> {
     static mapWith = "mongo"
     
     static mapping = {
-        collection "books"   
+        collection "books"        
     }
 
     static constraints = {
+        title nullable: true
+        isbn nullable: true
+        ageCount nullable: true
+        ublishDate nullable: true
+        thumbnailUrl nullable: true
+        shortDescription nullable: true
+        largeDescription nullable: true
+        status nullable: true
+        authors nullable: true
+        categories nullable: true  
     }
 }
