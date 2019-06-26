@@ -16,6 +16,10 @@ class Book implements MongoEntity<Book> {
     String [] categories
     
     static mapWith = "mongo"
+    
+    static mapping = {
+        collection "books"   
+    }
 
     static constraints = {
     }
